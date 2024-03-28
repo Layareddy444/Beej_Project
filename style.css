@@ -576,7 +576,7 @@
     align-items: center;
     gap: 150px;
     flex-direction: column;
-    padding: 100px 100px;
+    padding: 100px;
     /* border: 2px solid blue; */
 }
 
@@ -688,7 +688,7 @@
 /* section 6 featured founders */
 .section-6 {
     width: 100%;
-    padding: 100px 100px;
+    padding: 100px ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -757,9 +757,13 @@
 }
 
 @media(max-width:500px) {
+    .section-6{
+        padding: 10px;
+    }
     .sec6-title h1 {
         font-size: 25px;
         line-height: 30px;
+        text-align: center;
     }
 
     .section-6 .sec6-cards {
@@ -771,8 +775,7 @@
 /* section 7 founder and investor form registration  */
 .section-7 {
     width: 100%;
-    padding: 100px 100px;
-    /* border: 2px solid blue; */
+    padding: 100px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -799,23 +802,21 @@
     gap: 10px;
 }
 
-.sec7-content .sec7-image {
+.sec7-image {
     width: 50%;
-    height: 300px;
+    height: 60%;
     position: relative;
-    overflow: hidden;
-    /* border: 2px solid red; */
+    
 }
 
-#laptop,
 #form {
     position: absolute;
 }
 
-#laptop {
-    width: 500px;
-    height: auto;
-}
+    #laptop {
+        width: 500px;
+        height: auto;
+    }
 
 #form {
     width: 385px;
@@ -825,7 +826,7 @@
 
 }
 
-.sec7-content .sec7-info {
+ .sec7-info {
     width: 50%;
     display: flex;
     justify-content: flex-start;
@@ -851,84 +852,60 @@
 
 }
 
-/* section 7 media queries */
-@media(max-width:1150px) {
+@media(max-width:1200px){
+    .section-7{
+        padding: 10px;
+    }
+   #laptop{
+    width: 370px;
+   }
+   #form {
+    width: 285px;
+    height: 168px;
+    left: 44px;
+    top: 12px;
+}
+} 
+
+
+@media(max-width:1100px)  {
+
     .sec7-content {
-        flex-wrap: wrap;
+        flex-direction: column;
+        width: 98%;
     }
-
-    #form {
-        width: 380px;
-        height: auto;
-    }
-
+    .sec7-info{
+        width: 100%;
+    } 
+   
 }
 
-@media(max-width:1120px) {
-    .sec7-image {
-        width: 500px;
-    }
-
-    #laptop {
-        width: 400px;
-
-    }
-
-    #form {
-        width: 330px;
+@media(max-width:700px){
+    .registration-heading{
+        flex-direction: column;
+        gap: 20px;
     }
 }
-
-
-
-@media(max-width:770px) {
-    #form {
-        width: 210px;
-
-        left: 30px;
-        height: 125px;
+@media(max-width:570px){
+    .section-7{
+        padding: 10px;
     }
-
-    #laptop {
-        width: 300px;
-        height: 200px;
-    }
-
-    .founder .investor h1 {
-        font-size: 15px;
-    }
+   #laptop{
+    width: 370px;
+   }
+   #form {
+    width: 285px;
+    height: 168px;
+    left: 44px;
+    top: 12px;
 }
-
-@media(max-width:470px) {
-    .sec7-image {
-        width: 400px;
-    }
-
-    #laptop {
-        width: 200px;
-        height: auto;
-    }
-
-    #form {
-        width: 125px;
-        left: 22px;
-        height: 77px;
-        top: 6px;
-    }
-
-    .sec7-content .sec7-info {
-        width: 500px;
-    }
-
-    .sec7-image {
-        width: 300px;
-    }
-
-    .founder .investor h1 {
-        font-size: 10px;
-    }
+.sec7-info{
+    text-align: center;
 }
-
+.registration-heading{
+    text-align: center;
+}
+}
 /* section 8 professionals  */
 .section-8 {
     width: 100%;
@@ -988,7 +965,7 @@
     .title h1 {
         font-size: 25px;
     }
-}
+} 
 
 
 /* section 10 join our events */
@@ -1275,6 +1252,10 @@
 @media(max-width:960px) {
     .img-container {
         flex-wrap: wrap;
+    }
+    .sec12-head {
+        text-align: center;
+        padding: 0px;
     }
 }
 
